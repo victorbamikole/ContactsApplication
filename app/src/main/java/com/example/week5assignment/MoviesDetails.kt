@@ -7,6 +7,7 @@ import android.widget.TextView
 import de.hdodenhof.circleimageview.CircleImageView
 
 class MoviesDetails : AppCompatActivity() {
+    // TryingToPush
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movies_details)
