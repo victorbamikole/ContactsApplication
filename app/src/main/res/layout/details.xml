@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:transitionName="example_transition"
         android:id="@+id/circleImageView"
         android:layout_width="175dp"
         android:layout_height="178dp"

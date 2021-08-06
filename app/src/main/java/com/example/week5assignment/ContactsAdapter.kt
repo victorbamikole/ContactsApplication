@@ -13,7 +13,7 @@ class ContactsAdapter(var contacts: List<Contacts>) :
 
     //Create click listner for our adpater class
     interface onItemClickListener {
-        fun onContactItem(position: Int)
+        fun onContactItem(position: Int, next: View?)
     }
     fun setOnItemClickListener(listener: onItemClickListener) {
         contactListener = listener
@@ -25,7 +25,7 @@ class ContactsAdapter(var contacts: List<Contacts>) :
         init {
 
             itemView.setOnClickListener {
-                listener.onContactItem(adapterPosition)
+                listener.onContactItem(adapterPosition, itemView)
             }
         }
     }
