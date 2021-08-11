@@ -11,7 +11,7 @@ class ContactsAdapter(var contacts: List<Contacts>) :
     RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder>() {
     private lateinit var contactListener: onItemClickListener
 
-    //Create click listner for our adpater class
+    //Create click listener for our adapter class
     interface onItemClickListener {
         fun onContactItem(position: Int, next: View?)
     }
